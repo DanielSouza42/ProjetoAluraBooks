@@ -1,0 +1,161 @@
+.carrossel__titulo{
+    text-align: center;
+    color: var(--laranja);
+    background-color: var(--cor-de-fundo-branco);
+    padding: 1em 0 .75em 0;
+    text-transform: uppercase;
+    font-size: 1.125em;
+    font-weight: 700;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    display: none;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin: .5em 0;
+}
+
+.card{
+    border-radius: 10px;
+    background: var(--cor-de-fundo-branco);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 1em;
+    padding: 1em;
+    line-height: normal;
+}
+
+.card__descricao{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.descricao{
+    width: 50%;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    color: var(--laranja);
+    
+}
+
+.descricao__subtitulo-1{
+    color: var(--azul);
+    font-weight: 700;
+    font-size: 1.125em;
+    padding: .8em 0 .8em 0;
+
+}
+
+.descricao__subtitulo-2{
+    font-size: .875em;
+}
+
+.card_angular{
+    width: 50%;
+    padding-bottom: 1em;
+}
+
+.card__icones{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+
+
+.icones__saibamais{
+    width: 50%;
+    padding: 1em 0;
+    text-align: center;
+    background-color: var(--laranja);
+    text-decoration: none;
+    color: var(--cor-de-fundo-branco);
+    font-weight: 700;
+}
+
+.icones{
+    width: 50%;
+}
+/* ---------------------1024px------------------ */
+
+
+@media screen and (min-width: 1024px){
+    .carrossel__titulo{
+        padding-top: 2em;
+        font-size: 1.625em;
+    }
+
+    .swiper{
+       width: 70%;
+    }
+
+    .swiper-pagination{
+       margin: 2em 0 3em 0;
+    }
+
+    .card{
+        margin: 2em auto;
+        width: 588px;
+        height: 266px;        
+    }
+
+    .card_angular, .descricao, .icones__saibamais, .icones{
+        width: auto;
+    }
+
+    .icones__saibamais{
+        padding: 1em 2.2em
+    }
+
+    .swiper-button-prev, .swiper-button-next{
+        display: block;
+        top: 60%;
+    }
+
+    .descricao__titulo{
+        font-size: 2em;
+        margin-right: 1em;
+    }
+
+    .descricao__subtitulo-2{
+        font-size: 1em;
+        margin-right: 4em;
+    }
+
+
+}
+
+@media screen and (min-width: 1728px) {
+
+    .carrossel__1728{
+        display: flex;
+        align-items: center;
+        margin: 0 3em 3em 3em;
+    }
+
+    .swiper{
+        width: 40%;
+    }
+    
+    .swiper-pagination{
+        margin-bottom: 2em;
+    }
+
+     .swiper-slide img{
+        width: 90%;
+    }
+
+    .card{
+        margin: 3em auto 1em auto;
+        /* align-self: flex-end; */
+    }
+}

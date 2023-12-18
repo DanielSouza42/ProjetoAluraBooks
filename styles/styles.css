@@ -1,0 +1,27 @@
+@import url("header.css");
+@import url("banner.css");
+@import url("carrossel.css");
+@import url("listaDeTopicos.css");
+@import url("contato.css");
+@import url("footer.css");
+
+:root{
+    --cor-de-fundo-branco: #FFF;
+    --cor-de-fundo-cinza: #EBECEE;
+    --laranja: #EB9B00;
+    --azul: #002F52;
+    --preto: #000000;
+    --cinza-titulo: #858585;
+    --cinza-paragrafo: #474646;
+    --azul-gradiente: linear-gradient(98deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-poppins: "poppins";
+    font-weight: 400;
+    font-size: 1em;
+}
+
+body{
+    background-color: var(--cor-de-fundo-cinza);
+    font-size: 1em;
+    font-family: var(--fonte-poppins), sans-serif;
+    font-weight: 400;
+}
